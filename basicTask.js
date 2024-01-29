@@ -1,3 +1,7 @@
+
+//milestone 16 : js intro task 
+//base on variable, operator, basic builtin func
+
 function taskOne() {
   let applePrice = 323;
   let orangePrice = 922;
@@ -41,4 +45,3 @@ function taskFour()
 
 
 
-taskFour();
