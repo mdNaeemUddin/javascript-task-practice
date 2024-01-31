@@ -62,10 +62,8 @@ function includeFunc() {
   console.log(Array.isArray(x));
 }
 
-function conceptFunc()
-{
+function conceptFunc() {
   console.log("I am here to learn\nWhat?\nProgramming\n");
-  
 }
 
 conceptFunc();
