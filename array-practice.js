@@ -7,4 +7,17 @@ function basicFunc() {
   console.log(num.length);
   console.log(num);
 }
-basicFunc();
+
+
+function arrayTravel() {
+  const numbers = [23, 87, 873, 73,78];
+  const num = numbers.sort();
+  console.log(num);
+  let i = 0;
+  while (i < numbers.length) {
+    console.log(numbers[i]);
+    i++;
+  }
+}
+
+arrayTravel();

@@ -54,21 +54,15 @@ function checkIsItArray() {
   }
 }
 
-
 //combing array
 
-function arrayCombineFunc()
-{
-    const num1 = [2, 8, 8, 3, 8];
-    console.log(`first array list: ${num1}\n`);
+function arrayCombineFunc() {
+  const num1 = [2, 8, 8, 3, 8];
+  console.log(`first array list: ${num1}\n`);
 
-    const num2 = [22, 88, 99, 232, 87];
-    console.log(`second array list: ${num2}\n`);
+  const num2 = [22, 88, 99, 232, 87];
+  console.log(`second array list: ${num2}\n`);
 
-    const numbers = num1.concat(num2);
-    console.log(`Final array list: ${numbers}\n`);
-
+  const numbers = num1.concat(num2);
+  console.log(`Final array list: ${numbers}\n`);
 }
-
-
-arrayCombineFunc();
