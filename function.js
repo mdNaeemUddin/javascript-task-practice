@@ -148,3 +148,91 @@ function shopingMoneyRequire(a, b, c) {
 }
 
 //console.log(shopingMoneyRequire(450, 233, 883));
+
+//cheapest phone from an array of object
+
+function getCheapPhone(mobile) {
+  let cheapPhone = mobile[0];
+  for (const item of mobile) {
+    if (cheapPhone.price < item.price) {
+      cheapPhone = item;
+    }
+  }
+  return cheapPhone;
+}
+
+// const prices = [20000, 30000, 40000, 500000, 60000];
+
+const mobiles = [
+  { name: "samsung", price: 20000, camera: "12mp", color: "black" },
+  { name: "nokia", price: 34000, camera: "12mp", color: "black" },
+  { name: "realme", price: 40000, camera: "12mp", color: "black" },
+  { name: "maximas", price: 10000, camera: "12mp", color: "black" },
+];
+
+// console.log(getCheapPhone(mobiles));
+
+function costOfShoppingCart(products) {
+  let total = 0;
+  for (const item of products) {
+    // total += item.price;
+    total += item.price * item.quantity;
+  }
+  return total;
+}
+
+const products = [
+  { name: "mango", price: 3000, quantity: 2 },
+  { name: "peyera", price: 4000, quantity: 3 },
+  { name: "apple", price: 5000, quantity: 4 },
+  { name: "bamboo", price: 6000, quantity: 8 },
+  { name: "milk", price: 5000, quantity: 9 },
+];
+
+// console.log(costOfShoppingCart(products));
+
+//simple calculator
+
+function add(a, b) {
+  return a + b;
+}
+
+function sub(a, b) {
+  return a - b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function divide(a, b) {
+  return a / b;
+}
+
+function calculatorFunc(a, b, operation) {
+
+//error handling
+
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    return 'please provide a number';
+  }
+
+  
+  if (operation === "add") {
+    const res = add(a, b);
+    return res;
+  } else if (operation === "sub") {
+    const res = sub(a, b);
+    return res;
+  } else if (operation === "multiply") {
+    const res = multiply(a, b);
+    return res;
+  } else if (operation === "divide") {
+    const res = divide(a, b);
+    return res;
+  } else {
+    return "Only 'add', 'sub', 'multiply', 'and divide' operation is allow";
+  }
+}
+
+console.log(calculatorFunc(4, 'helo', "multiply"));
