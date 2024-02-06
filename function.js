@@ -210,14 +210,12 @@ function divide(a, b) {
 }
 
 function calculatorFunc(a, b, operation) {
+  //error handling
 
-//error handling
-
-  if (typeof a !== 'number' || typeof b !== 'number') {
-    return 'please provide a number';
+  if (typeof a !== "number" || typeof b !== "number") {
+    return "please provide a number";
   }
 
-  
   if (operation === "add") {
     const res = add(a, b);
     return res;
@@ -235,4 +233,4 @@ function calculatorFunc(a, b, operation) {
   }
 }
 
-console.log(calculatorFunc(4, 'helo', "multiply"));
+console.log(calculatorFunc(4, "helo", "multiply"));
