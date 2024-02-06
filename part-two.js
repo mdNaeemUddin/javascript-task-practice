@@ -23,4 +23,31 @@ function studentInfo(student) {
     return `name is : ${student.name} and age is : ${student.age}`;
 }
 
-console.log(studentInfo({ name: "Naeem Uddin", age: -25 }));
+// console.log(studentInfo({ name: "Naeem Uddin", age: -25 }));
+
+
+// find max number in array and validation
+
+function largestValueGet(num) {
+
+    if (!Array.isArray(num)) {
+        return 'give me array';
+    }
+
+    let max = num[0];
+
+    for (let i = 0; i < num.length; i++){
+        if (typeof num[i] !== 'number') {
+            return 'give me number array';
+        }else if (num[i] >= max) {
+            max = num[i];
+        }
+    }
+
+    return max;
+}
+
+const numbers = [23, true, 87, 323, 978];
+
+// console.log(largestValueGet(33));
+
